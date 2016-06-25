@@ -1,0 +1,24 @@
+{
+    "name": "codex/addon-jira",
+    "type": "codex-addon",
+    "description": "The Jira Addon",
+    "keywords": ["laravel", "documentation", "docs", "markdown", "codex", "phpdoc"],
+    "homepage": "http://codex-project.ninja",
+    "authors": [{"name": "Robin Radic", "email": "robin@radic.nl"}],
+    "support": {"issues": "https://projects.radic.nl", "docs": "http://codex-project.ninja/codex", "source": "https://github.com/codex-project/addon-jira"},
+    "license": "MIT",
+    "require": {
+        "codex/composer-plugin": "~2.0",
+        "codex/core": "2.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codex\\Addon\\Jira\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
