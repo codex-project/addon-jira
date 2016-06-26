@@ -15,6 +15,9 @@ use JiraRestApi\JiraException;
 
 class Jira
 {
+    /** @var \Codex\Codex  */
+    public $codex;
+
     /** @var \Codex\Documents\Document */
     public $document;
 
@@ -39,7 +42,7 @@ class Jira
         try
         {
             $issues = $this->searchIssues($jql);
-            return view('codex.macros.issues', compact('issues', 'project', 'show'))->render();
+            return view($this->codex->view('macros.jira.list-issues'), compact('issues', 'project', 'show'))->render();
         }
         catch (JiraException $e)
         {

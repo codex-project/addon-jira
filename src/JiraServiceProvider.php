@@ -10,11 +10,14 @@
  */
 namespace Codex\Addon\Jira;
 
+use Codex\Traits\CodexProviderTrait;
 use JiraRestApi\Configuration\ArrayConfiguration;
 use Sebwite\Support\ServiceProvider;
 
 class JiraServiceProvider extends ServiceProvider
 {
+    use CodexProviderTrait;
+
     protected $dir = __DIR__;
 
     protected $configFiles = [ 'codex-jira' ];
@@ -27,6 +30,7 @@ class JiraServiceProvider extends ServiceProvider
         $this->registerJiraMacros();
         $this->registerJira();
         $this->registerJiraCredentials();
+        $this->codexView('macros.jira.list-issues', 'codex-jira::list-issues');
         return $app;
     }
 
