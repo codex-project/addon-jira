@@ -21,8 +21,6 @@ namespace Codex\Addon\Jira;
  */
 class JiraAddon
 {
-
-
     /** @var \Codex\Codex */
     public $codex;
 
