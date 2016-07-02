@@ -9,7 +9,8 @@
     "license": "MIT",
     "require": {
         "codex/composer-plugin": "~2.0",
-        "codex/core": "2.0.*"
+        "codex/core": "2.0.*",
+        "lesstif/php-jira-rest-client": "~1.7"
     },
     "autoload": {
         "psr-4": {
