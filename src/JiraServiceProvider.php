@@ -10,7 +10,7 @@
  */
 namespace Codex\Addon\Jira;
 
-use Codex\Traits\CodexProviderTrait;
+use Codex\Support\Traits\CodexProviderTrait;
 use JiraRestApi\Configuration\ArrayConfiguration;
 use Laradic\ServiceProvider\ServiceProvider;
 
