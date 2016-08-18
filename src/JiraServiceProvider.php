@@ -12,7 +12,7 @@ namespace Codex\Addon\Jira;
 
 use Codex\Traits\CodexProviderTrait;
 use JiraRestApi\Configuration\ArrayConfiguration;
-use Sebwite\Support\ServiceProvider;
+use Laradic\ServiceProvider\ServiceProvider;
 
 class JiraServiceProvider extends ServiceProvider
 {
