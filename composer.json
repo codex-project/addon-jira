@@ -7,10 +7,11 @@
     "authors": [{"name": "Robin Radic", "email": "robin@radic.nl"}],
     "support": {"issues": "https://projects.radic.nl", "docs": "http://codex-project.ninja/codex", "source": "https://github.com/codex-project/addon-jira"},
     "license": "MIT",
+    "repositories": [{"type": "vcs", "url": "https://github.com/robinradic/php-jira-rest-client"}],
     "require": {
         "codex/composer-plugin": "~2.0",
         "codex/core": "2.0.*",
-        "lesstif/php-jira-rest-client": "~1.7"
+        "lesstif/php-jira-rest-client": "dev-master#ce2430177c8c4aa68ec51affc067b452c226f9dc@dev"
     },
     "autoload": {
         "psr-4": {
