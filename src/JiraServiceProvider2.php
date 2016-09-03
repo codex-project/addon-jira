@@ -14,7 +14,7 @@ use Codex\Support\Traits\CodexProviderTrait;
 use JiraRestApi\Configuration\ArrayConfiguration;
 use Laradic\ServiceProvider\ServiceProvider;
 
-class JiraServiceProvider extends ServiceProvider
+class JiraServiceProvider2 extends ServiceProvider
 {
     use CodexProviderTrait;
 
