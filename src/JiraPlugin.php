@@ -4,14 +4,14 @@
  *
  * License and copyright information bundled with this package in the LICENSE file.
  *
- * @author    Robin Radic
- * @copyright Copyright 2016 (c) Codex Project
- * @license   http://codex-project.ninja/license The MIT License
+ * @author Robin Radic
+ * @copyright Copyright 2017 (c) Codex Project
+ * @license http://codex-project.ninja/license The MIT License
  */
 namespace Codex\Addon\Jira;
 
 
-use Codex\Addons\Annotations\Plugin;
+use Codex\Addons\Annotations as CA;
 use Codex\Addons\BasePlugin;
 use JiraRestApi\Configuration\ArrayConfiguration;
 
@@ -21,7 +21,7 @@ use JiraRestApi\Configuration\ArrayConfiguration;
  * @package        Codex\Addon
  * @author         Radic
  * @copyright      Copyright (c) 2015, Radic. All rights reserved
- * @Plugin("jira")
+ * @CA\Plugin("jira")
  */
 class JiraPlugin extends BasePlugin
 {
